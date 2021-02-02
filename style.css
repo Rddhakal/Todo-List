@@ -1,0 +1,102 @@
+* { padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: poppins;
+    outline: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    padding: 4rem 10rem;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(#19547b, #ffd89b)
+}
+
+.input-container {
+    padding: 0 0 10px 0;
+    width: 100%;
+    height: 6vh;
+    border-bottom: 2px solid black;
+}
+
+.input-container input {
+    width: 100%;
+    height: 100%;
+    padding: 0 8px;
+    font-size: 1.1rem;
+    background: none;
+}
+
+.input-container input::placeholder {
+    color: black;
+}
+
+.notes-container {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.notes-title {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.note-container {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    transition: .5s ease;
+}
+
+.note-container .time {
+    position: absolute;
+    left: -13%;
+    top: 30%;
+    font-size: 1.2rem;
+    user-select: none;
+    opacity: .8;
+    color: whitesmoke;
+    /* transform: translateY((-50%)); */
+}
+.note-container.complete {
+    background-color: green;
+    color: white;
+}
+
+.note-container .operations {
+    display: flex;
+    height: 100%;
+}
+
+.operations button {
+    height: 100%;
+    padding: 0 10px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+}
+
+.operations .complete-btn {
+    color: hsl(270, 50%, 30%);
+}
+
+.operations .trash-btn {
+    color: hsl(0, 100%, 30%);
+}
+
+.complete-notes-container {
+    margin-top: 4.5rem;
+}
