@@ -100,3 +100,24 @@ body {
 .complete-notes-container {
     margin-top: 4.5rem;
 }
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 4rem 3rem;
+    }
+
+.input-container input {
+    font-size: 1.3rem;
+}
+
+.note-container .time {
+    left: 0;
+    top: 55px;
+}
+
+.note-container {
+    font-size: 18px;
+    margin-bottom: 3rem;
+}
+}
